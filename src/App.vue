@@ -1,14 +1,14 @@
 <!--
  * @Author: your name
  * @Date: 2020-10-23 15:20:58
- * @LastEditTime: 2020-10-23 15:45:59
+ * @LastEditTime: 2020-10-23 17:02:07
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \backstageManage\src\App.vue
 -->
 <template>
   <div id="app">
-    <p>123</p>
+    <router-view></router-view>
   </div>
 </template>
 
