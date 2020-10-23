@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-10-23 15:20:58
- * @LastEditTime: 2020-10-23 15:42:47
+ * @LastEditTime: 2020-10-23 16:31:53
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \backstageManage\public\index.html
@@ -13,7 +13,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>backstageIcon.png">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <title>后台管理</title>
     <script>
       (function(window, document) {
         function resize() {
@@ -32,9 +32,6 @@
             cardinal = 160;
           }
           document.documentElement.style.fontSize = scale * cardinal / dpr + 'px';
-          console.log(scale);
-          console.log(dpr);
-          console.log(scale * cardinal / dpr + 'px');
         }
 
         resize();
