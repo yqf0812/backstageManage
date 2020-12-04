@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-10-23 16:58:34
- * @LastEditTime: 2020-11-05 21:09:14
+ * @LastEditTime: 2020-12-03 17:45:58
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \backstageManage\src\views\login\login.vue
@@ -11,9 +11,10 @@
       <div class="mask"></div>
       <div class="login-box">
           <div class="input-box">
-            <el-input class="el-input__style" v-model="user" name="user" placeholder="请输入内容"></el-input>
-            <el-input class="el-input__style" v-model="passowrd" name="password" placeholder="请输入内容"></el-input>
+            <el-input class="el-input__style" v-model="user" name="user" placeholder="请输入账号"></el-input>
+            <el-input class="el-input__style" v-model="passowrd" name="password" placeholder="请输入密码"></el-input>
           </div>
+          <el-button class="login-btn" type="primary">登录</el-button>
       </div>
       <!-- <el-input v-model="input" placeholder="请输入内容"></el-input> -->
   </div>
@@ -25,7 +26,7 @@ export default {
     data() {
         return {
             user: '',
-            password: ''
+            passowrd: ''
         }
     }
 }
@@ -61,16 +62,24 @@ export default {
     z-index: 999;
     margin-top: -1rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .input-box {
     margin-top: -0.2rem;
     width: 30%;
+    margin-bottom: 0.2rem;
+}
+.login-btn {
+    width: 30%;
 }
 .input-box .el-input__inner {
     margin-top: 0.2rem;
     background-color: transparent;
+    color: #000;
+}
+.login /deep/ .el-input__inner::placeholder {
     color: #fff;
 }
 </style>
