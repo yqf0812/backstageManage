@@ -17,6 +17,8 @@
 export default {
   name: 'App',
   components: {
+  },
+  methods: {
   }
 }
 </script>

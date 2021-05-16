@@ -8,6 +8,6 @@
  */
 export default {
     // 接口地址
-    baseURL: 'http://localhost:8090/scheduleweb/',
+    baseURL: 'http://192.168.31.15:3000/',
     isDev: true
   }
